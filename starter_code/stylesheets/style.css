@@ -139,6 +139,8 @@ h2 {
 .team,
 .work,
 .speed {
+    display: flex;
+    flex-direction: column;
     padding: 1rem 0rem;
 }
 
@@ -327,6 +329,16 @@ small {
         align-items: center;
     }
 
+    header h1 {
+        text-align: left;
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
+
+    header .screenshot {
+        translate: 20%;
+    }
+
     .companiesLogo {
         flex-wrap: nowrap;
         padding: 0;
@@ -374,3 +386,55 @@ small {
     }
 
 }
+
+@media (min-width: 1024px) and (max-width:1440px){
+    .team,
+    .work,
+    .speed {
+        flex-direction: row;
+    }
+
+    h2 {
+        margin: 1rem
+    }
+
+    .team p,
+    .work p,
+    .speed p {
+        margin: 1rem;
+    }
+
+    a {
+        margin: 1rem
+    }
+
+    .work img {
+        translate: 70%;
+    }
+
+    .work h2,
+    .work p,
+    .work a {
+        translate: -200%;
+    }
+
+    .welcomeButtons {
+        flex-direction: row;
+    }
+
+    .welcomeButtons .whiteButton,
+    .welcomeButtons .purpleButton {
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .linksSns {
+        justify-content: left;
+    }
+
+    .linksSns li {
+        margin: 0 1.5rem;
+    }
+   }
