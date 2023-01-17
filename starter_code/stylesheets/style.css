@@ -8,3 +8,301 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+nav {
+    background-color:#540B51 ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.slackLogo {
+    height: 1.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+.navbarIcons button{
+    background-color: #540B51;
+    border: none;
+    color: white;
+    padding-left: 1rem;
+}
+
+header {
+    background-color:#540B51 ;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+p em {
+    color: #ECB12F;
+    text-transform: none;
+}
+
+.signUpEmail, .signUpGoogle {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.signUpEmail {
+    text-transform: uppercase;
+    color: #540B51;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.signUpGoogle{
+    background-color: #4285F4;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.signUpGoogle img {
+    height: 50px;
+    background-color: white;
+    float: left;
+}
+
+.screenshot
+ {
+    width: 95%;
+    height: auto;
+}
+
+
+main {
+    background-color: #F3EAE2;
+}
+
+.trustCompany {
+    padding: 2rem;
+}
+
+.trustCompany p {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.companiesLogo img {
+    height: 40px;
+    margin: 0.7rem;
+}
+
+.companiesLogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2 {
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.team,
+.work,
+.speed {
+    padding: 1rem 0rem;
+}
+
+.team p,
+.work p,
+.speed p {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #2E71A6;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+a img {
+    height: 10px;
+}
+
+.right {
+   float: right;
+}
+
+.slackSupport {
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+    padding: 2.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.slackSupport > p {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-weight: 500;
+}
+
+.supportButtons {
+    margin: 1rem;
+}
+
+.purpleButton, .whiteButton {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.purpleButton {
+    background-color: #540B51;
+    border: 2px solid white;
+    color: white;
+}
+
+.whiteButton {
+    background-color: white;
+    color: #540B51;
+    border: 2px solid #540B51;
+}
+
+.supportList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 45%;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.supportList span {
+    color: #540B51;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.supportList p {
+    font-weight: bold;
+}
+
+.supportList li {
+    margin: 0.5rem;
+}
+
+.welcome {
+    background-color: #540B51;
+    width: 100%;
+    padding: 1rem;
+}
+
+.welcome h3 {
+    color: white;
+}
+
+footer img {
+    width: 50px;
+    margin: 1rem;
+}
+
+.siteMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.siteMap ul {
+    list-style: none;
+    width: 20%;
+}
+
+.siteMap ul li:first-child{
+    font-weight: bold;
+}
+
+.siteMap ul li {
+    font-weight: 300;
+    padding: 0.5rem;
+    color: #454245;
+}
+
+li img {
+    width: 20px;
+    margin: 0;
+}
+
+.links {
+    margin: 1rem;
+    list-style: none;
+}
+
+.links li{
+    padding: 1rem 0rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.links li:last-child{
+    color:#2E71A6;
+}
+
+.linksSns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 1rem;
+}
+
+small {
+    color: #454245;
+    margin: 1rem;
+}
+
+/* 
+@media screen and (768 < width > 1024 ){
+
+} */
