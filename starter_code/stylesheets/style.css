@@ -90,12 +90,16 @@ p em {
     align-items: center;
     font-size: 1rem;
     text-transform: uppercase;
+    position: relative;
 }
 
 .signUpGoogle img {
     height: 50px;
     background-color: white;
     float: left;
+    position: absolute;
+    left: 0;
+    margin-left: 0.5rem;
 }
 
 .screenshot
@@ -137,10 +141,15 @@ h2 {
 }
 
 .team,
-.work,
 .speed {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0rem;
+}
+
+.work {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 1rem 0rem;
 }
 
@@ -318,7 +327,7 @@ small {
 }
 
 
-@media (min-width: 768px) and (max-width:1024px){
+@media (min-width: 768px){
     header {
         display: flex;
         flex-direction: row;
@@ -387,35 +396,60 @@ small {
 
 }
 
-@media (min-width: 1024px) and (max-width:1440px){
+@media (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    [hidden] {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    [hidden] a {
+        color: white;
+    }
+
+    .burgerIcon{
+        display: none;
+    }
+
+    .menu a {
+        color: white;
+    }
+    
     .team,
-    .work,
-    .speed {
+    .speed,
+    .work {
         flex-direction: row;
     }
 
     h2 {
-        margin: 1rem
+        margin: 2rem
     }
 
     .team p,
     .work p,
     .speed p {
-        margin: 1rem;
+        margin: 2rem;
     }
 
     a {
-        margin: 1rem
-    }
-
-    .work img {
-        translate: 70%;
-    }
-
-    .work h2,
-    .work p,
-    .work a {
-        translate: -200%;
+        margin: 2rem
     }
 
     .welcomeButtons {
